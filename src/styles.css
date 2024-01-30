@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria;
+    box-sizing: border-box;
+    color: #444
+
+}
+
+a {
+    text-decoration: none;
+    color:#444;
+    transition: 0.4;
+
+}
+
+a:hover{
+    color:#dec129;
+}
