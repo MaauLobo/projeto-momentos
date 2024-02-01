@@ -25,6 +25,11 @@ export class NewMomentsComponent {
 
     // TODO
 
-    await this.momentService.createMoment(formData).subscribe();
+    try {
+      await this.momentService.createMoment(formData).toPromise();
+      console.log('Momento criado com sucesso.');
+    } catch (error) {
+      console.error('Erro ao criar o momento:', error);
+    }
   }
 }
