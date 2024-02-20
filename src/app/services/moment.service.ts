@@ -27,4 +27,9 @@ getMoment(id: number): Observable<Response<Moment>>{
   const url = `${this.apiUrl}/${id}`;
   return this.http.get<Response<Moment>>(url);
 }
+
+removeMoment(id: number){
+  const url = `${this.apiUrl}/${id}`;
+  return this.http.delete(url);
+}
 }
